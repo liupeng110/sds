@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/imageview_icon"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_background_imageview_effect_reverb_auditorium"
+        circle:Image_border_color="#ff393939"
+        circle:Image_border_width="5.0dip"
+        circle:corner_radius="50.0dip" />
+
+    <ImageView
+        android:id="@+id/audio_effect_gridview_selector_state"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img_audio_effect_reverb_grivd_view_selector" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8.0dip"
+        android:clickable="false"
+        android:lines="1"
+        android:textColor="#ff999999"
+        android:textSize="15.0dip" />
+</RelativeLayout>

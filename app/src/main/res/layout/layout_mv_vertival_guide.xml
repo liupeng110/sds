@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d9000000">
+
+    <ImageView
+        android:id="@+id/image_vertical_guide"
+        android:layout_width="680.0dip"
+        android:layout_height="382.0dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/image_mv_guide_vertical" />
+
+    <Button
+        android:id="@+id/mv_guide_vertical_ok"
+        android:layout_width="100.0dip"
+        android:layout_height="44.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginRight="30.0dip"
+        android:background="@drawable/icon_mv_guide_vertical_ok" />
+</RelativeLayout>

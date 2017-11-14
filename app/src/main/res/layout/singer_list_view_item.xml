@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/iv_singer"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:scaleType="centerCrop"
+        app:corner_radius="20.0dip" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/itv_arrow"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        app:text="@string/icon_arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_toLeftOf="@+id/itv_arrow"
+        android:layout_toRightOf="@+id/iv_singer"
+        android:singleLine="true"
+        android:textColor="#ff444a50"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toLeftOf="@+id/itv_arrow"
+        android:layout_toRightOf="@+id/iv_singer"
+        android:singleLine="true"
+        android:textColor="#ffa1a4a7"
+        android:textSize="12.0dip" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="51.0dip">
+
+    <RelativeLayout
+        android:id="@+id/root_hit"
+        android:layout_width="fill_parent"
+        android:layout_height="51.0dip"
+        android:background="@drawable/recommand_bj_xml"
+        android:paddingLeft="20.0dip">
+
+        <RelativeLayout
+            android:id="@+id/recommand_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="61.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2.0dip"
+            android:layout_toLeftOf="@+id/layout_play">
+
+            <RelativeLayout
+                android:id="@+id/middle_left"
+                android:layout_width="80.0dip"
+                android:layout_height="51.0dip"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/textview_nickname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:ellipsize="marquee"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="4.0dip"
+                    android:singleLine="true"
+                    android:text="@string/recommand_effect_default"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/effect_boost_layer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textview_nickname"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="3.0">
+
+                    <com.sds.android.ttpod.widget.audioeffect.CircularProgress
+                        android:id="@+id/rotatebutton_bass_boost"
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:padding="2.0dip" />
+
+                    <com.sds.android.ttpod.widget.audioeffect.CircularProgress
+                        android:id="@+id/rotatebutton_treble_boost"
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:padding="2.0dip" />
+
+                    <com.sds.android.ttpod.widget.audioeffect.CircularProgress
+                        android:id="@+id/rotatebutton_surround"
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:padding="2.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.sds.android.ttpod.widget.audioeffect.EqualizerAnimationWaveView
+                android:id="@+id/waveview_effect_equalizer_equ"
+                android:layout_width="180.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/middle_left"
+                android:gravity="center_vertical"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="2.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

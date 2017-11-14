@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_musiccircle_radar_userinfo_frame"
+    android:padding="1.0dip">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:contentDescription="none"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_avatar_default" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/ListItem_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_toRightOf="@+id/avatar"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ff5293b9" />
+
+    <TextView
+        android:id="@+id/info1"
+        style="@style/ListItem_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_toRightOf="@+id/avatar"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#60000000" />
+
+    <TextView
+        android:id="@+id/info2"
+        style="@style/ListItem_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info1"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_toRightOf="@+id/avatar"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#60000000" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <include layout="@layout/mv_list_item" />
+
+    <com.sds.android.ttpod.widget.mediamenu.OnlineMVMenuLayout
+        android:id="@+id/expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/expandable_view_image_height"
+        android:background="@color/bg_expandable_menu"
+        android:gravity="center"
+        android:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_mv_singer_name"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/icon_text_play_count"
+            android:layout_width="@dimen/mv_play_count_icon"
+            android:layout_height="@dimen/mv_play_count_icon"
+            app:text="@string/icon_mv_play_count"
+            app:textColor="@color/mv_play_count_icon" />
+
+        <TextView
+            android:id="@+id/mv_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:textColor="@color/mv_portrait_menu_play_count"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_play_count"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/icon_text_bullet"
+            android:layout_width="@dimen/mv_play_count_icon"
+            android:layout_height="@dimen/mv_play_count_icon"
+            app:text="@string/icon_mv_bullet_solid"
+            app:textColor="@color/mv_play_count_icon" />
+
+        <TextView
+            android:id="@+id/mv_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:textColor="@color/mv_portrait_menu_play_count"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</LinearLayout>

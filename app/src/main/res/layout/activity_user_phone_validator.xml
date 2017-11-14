@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Register">
+
+    <TextView
+        android:id="@+id/regionCode"
+        style="@style/EditText_Register"
+        android:drawableRight="@drawable/img_album_right_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/mainland_region_code" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <com.sds.android.ttpod.common.widget.ClearEditText
+        android:id="@+id/phone_number"
+        style="@style/EditText_Register"
+        android:hint="@string/input_phone_number_hint"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="37.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingTop="14.0dip"
+        android:textColor="#ffa5acb6"
+        android:textSize="@dimen/register_tip_size" />
+
+    <TextView
+        android:id="@+id/next"
+        style="@style/TextView_Next"
+        android:text="@string/next" />
+</LinearLayout>

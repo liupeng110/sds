@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_mv_menu_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/mv_portrait_divider" />
+
+    <TextView
+        android:id="@+id/tv_mv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mv_info_margin_left_right"
+        android:layout_marginRight="@dimen/mv_info_margin_left_right"
+        android:layout_marginTop="12.0dip"
+        android:ellipsize="end"
+        android:textColor="#ff262628"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:id="@+id/v_mv_play_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mv_title"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="@dimen/mv_info_margin_left_right"
+        android:layout_marginRight="@dimen/mv_info_margin_left_right"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/itv_mv_play_count"
+            android:layout_width="@dimen/mv_play_count_icon"
+            android:layout_height="@dimen/mv_play_count_icon"
+            android:layout_gravity="center_vertical"
+            app:text="@string/icon_mv_play_count"
+            app:textColor="#ffc8d6d7" />
+
+        <TextView
+            android:id="@+id/tv_mv_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="2.0dip"
+            android:textColor="#ffb5c3c6"
+            android:textSize="12.0sp" />
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/itv_mv_danmaku"
+            android:layout_width="@dimen/mv_play_count_icon"
+            android:layout_height="@dimen/mv_play_count_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15.0dip"
+            app:text="@string/icon_mv_bullet_solid"
+            app:textColor="#ffc8d6d7" />
+
+        <TextView
+            android:id="@+id/tv_mv_danmaku_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="2.0dip"
+            android:textColor="#ffb5c3c6"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mv_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_mv_play_count"
+        android:layout_marginLeft="@dimen/mv_info_margin_left_right"
+        android:layout_marginRight="@dimen/mv_info_margin_left_right"
+        android:ellipsize="end"
+        android:maxLines="@integer/mv_description_lines"
+        android:textColor="@color/mv_portrait_description"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:id="@+id/v_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mv_description"
+        android:layout_marginLeft="@dimen/mv_info_margin_left_right"
+        android:layout_marginRight="@dimen/mv_info_margin_left_right"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:paddingTop="10.0dip"
+            android:text="@string/expand"
+            android:textColor="@color/mv_portrait_menu_play_count"
+            android:textSize="14.0sp" />
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/itv_expand"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3.0dip"
+            app:text="@string/icon_expand"
+            app:textColor="@color/mv_portrait_menu_play_count" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_mv_similar_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/v_expand"
+        android:layout_marginTop="12.0dip"
+        android:background="@color/mv_portrait_divider" />
+
+    <include
+        android:id="@+id/layout_indicator"
+        layout="@layout/layout_introduction_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_mv_similar_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="10.0dip" />
+</RelativeLayout>

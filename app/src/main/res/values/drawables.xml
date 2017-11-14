@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="apshare_bkg_blue">#ff26afef</item>
+    <item type="drawable" name="apshare_bkg_blue_pressed">#ff2095cb</item>
+    <item type="drawable" name="apshare_bkg_device_disable">#cc525c61</item>
+    <item type="drawable" name="apshare_bkg_device_enabled">#ff26afef</item>
+    <item type="drawable" name="apshare_bkg_gray">#ff95a4aa</item>
+    <item type="drawable" name="apshare_bkg_gray_pressed">#ff7f8c92</item>
+    <item type="drawable" name="apshare_bkg_green">#ff3ada4a</item>
+    <item type="drawable" name="apshare_bkg_green_pressed">#ff31ba3f</item>
+    <item type="drawable" name="apshare_bkg_red">#ffec5c5c</item>
+    <item type="drawable" name="apshare_bkg_red_pressed">#ffc94e4e</item>
+    <item type="drawable" name="apshare_whole_bkg">#fff6fafb</item>
+    <item type="drawable" name="color_background_crop_normal">#80000000</item>
+    <item type="drawable" name="color_background_crop_pressed">#8033b5e5</item>
+    <item type="drawable" name="match_lycpic_bkg">#d92f9dd1</item>
+    <item type="drawable" name="match_lycpic_bkg_pressed">#ff2f9dd1</item>
+    <item type="drawable" name="mv_bg">#8f000000</item>
+    <item type="drawable" name="setting_desc_subtitle_color">#ff959fa5</item>
+    <item type="drawable" name="setting_desc_title_color">#ff676f73</item>
+    <item type="drawable" name="singer_tab_text_choice_color">#ff9bdcff</item>
+    <item type="drawable" name="singer_tab_text_unchoice_color">#ffffffff</item>
+    <item type="drawable" name="transparent_drawable">#00000000</item>
+</resources>

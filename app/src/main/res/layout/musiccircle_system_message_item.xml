@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_listselector_item_default"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="4.0dip"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="4.0dip">
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:background="#ffd8dcdc"
+        android:gravity="center_horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:text="2013-11-02"
+        android:textColor="#ffffffff"
+        android:textSize="10.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_musiccircle_system_announcement_bg"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="天天动听校园歌手大赛"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@+id/message_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_background_imageview_effect_equalizer_handpick_rock" />
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="天天动听校园歌手大赛于2013-12-01开始"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+</LinearLayout>

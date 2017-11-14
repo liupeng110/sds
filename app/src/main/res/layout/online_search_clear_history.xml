@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_search_clear_history"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12.0dip"
+    android:paddingTop="12.0dip"
+    android:text="@string/search_clear_history"
+    android:textColor="#ffffffff"
+    android:textSize="16.0sp"
+    android:visibility="visible" />

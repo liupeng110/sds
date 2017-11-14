@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <com.sds.android.ttpod.widget.wheelview.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0.0dip"
+            android:layout_height="210.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="210.0dip"
+            android:gravity="center"
+            android:text=" : "
+            android:textColor="#ff000000" />
+
+        <com.sds.android.ttpod.widget.wheelview.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0.0dip"
+            android:layout_height="210.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

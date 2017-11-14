@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_background_action_view"
+    android:orientation="vertical">
+
+    <com.sds.android.ttpod.widget.RoundRectImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_marginTop="10.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_musiccircle_notice_new_followser" />
+
+    <TextView
+        android:id="@+id/tv_followers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_toRightOf="@+id/image_avatar"
+        android:singleLine="true"
+        android:text="kaikai"
+        android:textColor="#ff375770"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_followers"
+        android:layout_marginTop="2.0dip"
+        android:layout_toRightOf="@+id/image_avatar"
+        android:text="关注了你"
+        android:textColor="#ffa1a1a1"
+        android:textSize="12.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:layout_below="@+id/image_avatar"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/xml_musiccircle_list_item_divider" />
+</RelativeLayout>

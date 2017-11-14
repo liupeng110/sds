@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <com.sds.android.ttpod.widget.RectangleImageView xmlns:app="http://schemas.android.com/apk/res/com.sds.android.ttpod"
+        android:id="@+id/imageview_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:aspect_ratio="3.0" />
+
+    <TextView
+        android:id="@+id/textview_"
+        android:layout_width="fill_parent"
+        android:layout_height="66.0dip"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:text="登录后收藏歌曲，手机电脑多端同步!"
+        android:textColor="#ffcacaca" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_phone"
+        style="@style/Login_item_frame">
+
+        <LinearLayout
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_phone_login" />
+
+            <TextView
+                android:id="@+id/textview_phone_mail"
+                style="@style/Login_item_frame_text"
+                android:text="@string/use_login_phone_email" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UserInfo_division_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_wechat"
+        style="@style/Login_item_frame">
+
+        <LinearLayout
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_wechat_login" />
+
+            <TextView
+                android:id="@+id/textview_wechat"
+                style="@style/Login_item_frame_text"
+                android:text="@string/use_login_wechat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UserInfo_division_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_qq"
+        style="@style/Login_item_frame">
+
+        <LinearLayout
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_qq_login" />
+
+            <TextView
+                android:id="@+id/textview_qq"
+                style="@style/Login_item_frame_text"
+                android:text="@string/use_login_qq" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UserInfo_division_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_sina"
+        style="@style/Login_item_frame">
+
+        <LinearLayout
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_sina_login" />
+
+            <TextView
+                android:id="@+id/textview_sina"
+                style="@style/Login_item_frame_text"
+                android:text="@string/use_login_sina" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UserInfo_division_line" />
+</LinearLayout>

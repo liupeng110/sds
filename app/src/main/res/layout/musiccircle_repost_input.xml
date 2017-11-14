@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_repost_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/img_musiccircle_comment_content_bkg"
+        android:gravity="center|left|top"
+        android:hint="请输入转发内容"
+        android:lineSpacingExtra="3.0dip"
+        android:minHeight="50.0dip"
+        android:minLines="3"
+        android:padding="6.0dip"
+        android:singleLine="false"
+        android:textColor="#ff474342"
+        android:textColorHint="#ffacacac"
+        android:textSize="14.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_repost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_repost_content"
+        android:layout_marginTop="10.0dip"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:background="#ffc3d7de" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="84.0dip"
+            android:layout_height="84.0dip"
+            android:layout_below="@+id/line"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/ttpod"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_avatar_default" />
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/MusicCircle_ListItem_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_image"
+            android:layout_marginLeft="16.0dip"
+            android:layout_toRightOf="@+id/user_image"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/user_info"
+            style="@style/ListItem_Description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_send"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_above="@+id/layout_bottom"
+        android:background="@drawable/img_musiccircle_repost_bkg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6.0dip">
+
+        <ImageButton
+            android:id="@+id/btn_emoctions"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_musiccircle_post_detail_expression" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="您还可以输入"
+            android:textColor="#ffacacac"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/text_input_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 字"
+            android:textColor="#ffacacac"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/layout_emoticons"
+            layout="@layout/musiccircle_emoticons_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="190.0dip" />
+    </LinearLayout>
+</RelativeLayout>

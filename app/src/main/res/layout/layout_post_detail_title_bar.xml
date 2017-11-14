@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_post_detail_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:layout_alignParentTop="true"
+    android:background="#ff58aeef"
+    android:visibility="invisible">
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/post_header_back"
+        android:layout_width="34.0dip"
+        android:layout_height="34.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:text="@string/icon_arrow_left"
+        app:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/post_header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/post_header_back"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+</RelativeLayout>

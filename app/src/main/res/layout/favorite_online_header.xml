@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="left">
+
+    <TextView
+        android:id="@+id/textview_online_favorite_all_download"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/favorite_all_download"
+        android:textColor="@color/common_title_color"
+        android:textSize="15.0sp" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/itv_download"
+        android:layout_width="@dimen/media_item_menu_image_width"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/textview_online_favorite_all_download"
+        app:text="@string/icon_download" />
+</RelativeLayout>

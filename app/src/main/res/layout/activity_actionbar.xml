@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_activity_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/action_bar_controller"
+        layout="@layout/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/activity_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/action_bar_controller" />
+
+    <View
+        android:id="@+id/actionbar_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_header_shadow_height"
+        android:layout_below="@+id/action_bar_controller"
+        android:background="@drawable/xml_actionbar_shadow"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/status_bar_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:background="@color/default_system_bar_background" />
+
+    <View
+        android:id="@+id/navigate_bar_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_system_bar_background" />
+</RelativeLayout>

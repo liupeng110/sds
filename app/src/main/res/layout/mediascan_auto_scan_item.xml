@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="56.0dip">
+
+    <ImageView
+        android:id="@+id/imageview_mediascan_item_folder"
+        android:layout_width="56.0dip"
+        android:layout_height="56.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/ttpod"
+        android:padding="12.0dip"
+        android:src="@drawable/img_mediascan_item_folder" />
+
+    <TextView
+        android:id="@+id/textview_mediascan_exclude_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageview_mediascan_item_folder"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_toLeftOf="@+id/checkbox_mediascan_exclude_item"
+        android:layout_toRightOf="@+id/imageview_mediascan_item_folder"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="8.0dip"
+        android:gravity="left"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="music"
+        android:textColor="#ff222222"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/textview_mediascan_exclude_item_sub_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_mediascan_exclude_item_title"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_toRightOf="@+id/imageview_mediascan_item_folder"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="8.0dip"
+        android:gravity="left"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="/sdcard"
+        android:textColor="#ffb0b0b0"
+        android:textSize="12.0sp" />
+
+    <ImageView
+        android:id="@+id/imageview_mediascan_auto_scan_item_remove"
+        android:layout_width="?android:listPreferredItemHeight"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_imageview_mediascan_auto_scan_item_remove" />
+</RelativeLayout>

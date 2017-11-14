@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    <FrameLayout
+        android:id="@+id/layout_landscape_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_switch_landscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/landscape_share_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/xml_button_share_landscape"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/switch_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/landscape_switch_effect_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/xml_landscape_switch_effect"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/select_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/landscape_select_button"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/volume_panel"
+        layout="@layout/landscape_top_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:id="@+id/control_panel"
+        layout="@layout/landscape_bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

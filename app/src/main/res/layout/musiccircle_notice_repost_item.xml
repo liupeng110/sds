@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/xml_listselector_item_default"
+    android:padding="10.0dip">
+
+    <include
+        android:id="@+id/layout_avatar"
+        layout="@layout/musiccircle_image_new_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/Post_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layout_avatar"
+        android:text="1 分钟前" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_avatar"
+        android:layout_marginRight="48.0dip"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:textColor="#ff375770"
+        android:textSize="18.0sp" />
+
+    <com.sds.android.ttpod.widget.TextViewFixTouchConsume
+        android:id="@+id/tv_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="2.0dip"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:singleLine="false"
+        android:textColor="#ffa6a6a6"
+        android:textSize="12.0sp" />
+</RelativeLayout>

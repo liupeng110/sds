@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5.0dip"
+    android:layout_marginRight="5.0dip"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@drawable/img_background_pannel_minilyric_setting_top"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_font_zoomin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:paddingBottom="20.0dip"
+                android:src="@drawable/xml_button_minilyric_zoom_in" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/minilyric_font_zoom_in"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_font_zoomout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:paddingBottom="20.0dip"
+                android:src="@drawable/xml_button_minilyric_zoom_out" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/minilyric_font_zoom_out"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_lock"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:paddingBottom="20.0dip"
+                android:src="@drawable/xml_button_minilyric_lock" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/minilyric_button_lock"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:paddingBottom="20.0dip"
+                android:src="@drawable/xml_button_minilyric_close" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/minilyric_button_close"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/img_background_panel_minilyric_setting_center"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_color_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/xml_button_minilyric_color_blue" />
+
+            <ImageView
+                android:id="@+id/iv_color_blue_flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/img_button_minilyric_choice_color" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_color_yellow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/xml_button_minilyric_color_yellow" />
+
+            <ImageView
+                android:id="@+id/iv_color_yellow_flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/img_button_minilyric_choice_color" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_color_pink"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/xml_button_minilyric_color_pink" />
+
+            <ImageView
+                android:id="@+id/iv_color_pink_flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/img_button_minilyric_choice_color" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_color_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/xml_button_minilyric_color_gray" />
+
+            <ImageView
+                android:id="@+id/iv_color_gray_flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/img_button_minilyric_choice_color" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/iv_color_green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/xml_button_minilyric_color_green" />
+
+            <ImageView
+                android:id="@+id/iv_color_green_flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ttpod"
+                android:src="@drawable/img_button_minilyric_choice_color" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/img_background_panel_minilyric_setting_bottom"
+        android:padding="0.0dip">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:background="@drawable/xml_button_minilyric_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="@string/minilyric_button_ok"
+            android:textColor="#ffdddddd"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+</LinearLayout>

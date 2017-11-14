@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sds.android.ttpod.common.widget.RatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="148.0dip"
+    android:layout_height="50.0dip"
+    android:background="#88ffffff"
+    android:paddingLeft="0.0dip"
+    android:paddingRight="0.0dip"
+    app:design_width="148.0dip"
+    app:ratio_height="100"
+    app:ratio_width="296"
+    app:scale_child="true">
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/itv_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center|left|top"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="108.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@color/mask_background_color"
+        android:padding="12.0dip" />
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/ListView_Item_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|left|top"
+        android:layout_marginLeft="46.0dip"
+        android:layout_marginRight="20.0dip"
+        android:duplicateParentState="true"
+        android:gravity="center|left"
+        android:text="title"
+        android:textColor="@color/xml_fragment_main_mine_item_title"
+        android:textSize="18.0dip" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/new_flag"
+        android:layout_width="9.0dip"
+        android:layout_height="9.0dip"
+        android:layout_gravity="center|left|top"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="126.0dip"
+        android:layout_marginRight="13.0dip"
+        android:layout_marginTop="21.0dip"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:text="@string/icon_dot" />
+</com.sds.android.ttpod.common.widget.RatioFrameLayout>

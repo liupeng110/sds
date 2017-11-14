@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.sds.android.ttpod.widget.SlidingTabHost
+        android:id="@+id/sliding_tabs_host_mv"
+        style="@style/SlidingTabHost"
+        app:indicatorColor="#ff4ebbed"
+        app:indicatorHeight="@dimen/tab_indicator_height"
+        app:indicatorPaddingBottom="0.0dip"
+        app:tabHeight="@dimen/tab_label_height" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/sliding_tabs_host_mv" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:layout_below="@+id/sliding_tabs_host_mv"
+        android:clickable="true" />
+</RelativeLayout>

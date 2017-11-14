@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_empty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_smile" />
+
+    <TextView
+        android:id="@+id/note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="亲~没有任何内容哟~"
+        android:textColor="#ffd2d2d3"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="发现感兴趣内容，赶紧收藏吧！"
+        android:textColor="#ffd2d2d3"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+</LinearLayout>

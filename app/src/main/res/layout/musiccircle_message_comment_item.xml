@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/xml_listselector_item_default"
+    android:padding="10.0dip">
+
+    <include
+        android:id="@+id/layout_avatar"
+        layout="@layout/musiccircle_image_new_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/Post_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layout_avatar"
+        android:text="1 分钟前" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_avatar"
+        android:layout_marginRight="48.0dip"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:text=""
+        android:textColor="#ff4e5050" />
+
+    <TextView
+        android:id="@+id/tv_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="6.0dip"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:singleLine="false"
+        android:text="一起走过"
+        android:textColor="#ffa6a6a6" />
+
+    <com.sds.android.ttpod.widget.TextViewFixTouchConsume
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tweet"
+        android:layout_marginTop="4.0dip"
+        android:layout_toLeftOf="@+id/tv_time"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:background="@drawable/img_musiccircle_reference_content_arrow_up"
+        android:text="你评论了我，我转发了你，我们一起走过。。。"
+        android:textColor="#ffa6a6a6" />
+</RelativeLayout>

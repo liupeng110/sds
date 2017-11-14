@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10.0dip">
+
+    <View
+        android:id="@+id/singer_info_indicator"
+        android:layout_width="3.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginLeft="8.0dip" />
+
+    <TextView
+        android:id="@+id/singer_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_toRightOf="@+id/singer_info_indicator"
+        android:text="@string/resume"
+        android:textColor="#ff444a50"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/singer_info_content"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singer_info_indicator"
+        android:lineSpacingExtra="5.0dip"
+        android:orientation="vertical"
+        android:padding="3.0dip" />
+</RelativeLayout>

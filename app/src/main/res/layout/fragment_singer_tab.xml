@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.sds.android.ttpod.widget.expandablelist.ActionExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_expandable_list_view"
+        style="@style/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/playcontrol_bar_height"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <com.sds.android.ttpod.widget.StateView
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+</RelativeLayout>

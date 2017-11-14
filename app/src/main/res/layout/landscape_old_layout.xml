@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.sds.android.ttpod.component.landscape.LandscapeAnimTransView
+        android:id="@+id/animtransview_landscape_old"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="25.0dip"
+        android:layout_marginLeft="37.0dip"
+        android:layout_marginTop="33.0dip"
+        android:layout_weight="3.0" />
+
+    <com.sds.android.ttpod.component.landscape.LandscapeLyricShow
+        android:id="@+id/lyricview_landscape_old"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="48.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_weight="2.0"
+        android:fadingEdgeLength="10.0dip" />
+</LinearLayout>

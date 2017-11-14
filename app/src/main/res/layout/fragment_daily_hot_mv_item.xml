@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sds.android.ttpod"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="11.0dip"
+    android:paddingRight="11.0dip">
+
+    <TextView
+        android:id="@+id/mv_date_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="#ffdbdbdb"
+        android:textSize="52.0sp" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_alignLeft="@+id/mv_date_day"
+        android:layout_alignRight="@+id/mv_date_day"
+        android:layout_below="@+id/mv_date_day"
+        android:background="#ffdbdbdb" />
+
+    <TextView
+        android:id="@+id/mv_date_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mv_date_day"
+        android:layout_alignRight="@+id/mv_date_day"
+        android:layout_below="@+id/divider_line"
+        android:gravity="center"
+        android:padding="2.0dip"
+        android:textColor="#ffdbdbdb"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:id="@+id/mv_desc_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mv_date_day"
+        android:layout_alignTop="@+id/mv_date_day"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@+id/mv_date_day">
+
+        <TextView
+            android:id="@+id/mv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:lineSpacingExtra="3.0dip"
+            android:maxLines="2"
+            android:paddingTop="2.0dip"
+            android:textColor="#ff848484"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mv_date_month"
+        android:layout_alignLeft="@+id/mv_desc_container"
+        android:layout_alignTop="@+id/mv_date_month"
+        android:layout_below="@+id/divide_line">
+
+        <TextView
+            android:id="@+id/mv_tag1"
+            style="@style/daily_hot_mv_tag"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/mv_tag2"
+            style="@style/daily_hot_mv_tag"
+            android:layout_toRightOf="@+id/mv_tag1" />
+
+        <TextView
+            android:id="@+id/mv_tag3"
+            style="@style/daily_hot_mv_tag"
+            android:layout_toRightOf="@+id/mv_tag2" />
+
+        <TextView
+            android:id="@+id/mv_danmaku_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingRight="15.0dip"
+            android:singleLine="true"
+            android:textColor="#ffb5b5ad"
+            android:textSize="14.0sp" />
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/mv_danmaku_icon"
+            android:layout_width="23.0dip"
+            android:layout_height="23.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mv_danmaku_count"
+            android:padding="3.0dip"
+            app:text="@string/icon_mv_bullet" />
+    </RelativeLayout>
+
+    <com.sds.android.ttpod.widget.RectangleImageView xmlns:app="http://schemas.android.com/apk/res/com.sds.android.ttpod"
+        android:id="@+id/mv_screenshot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_date_month"
+        android:layout_marginTop="2.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_daily_hot_mv_default_screenshot"
+        app:aspect_ratio="1.77" />
+
+    <ImageView
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignBottom="@+id/mv_screenshot"
+        android:layout_alignTop="@+id/mv_screenshot"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/xml_musiccircle_post_detail_header_play" />
+
+    <View
+        android:id="@+id/item_divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/mv_screenshot"
+        android:layout_marginTop="22.0dip"
+        android:background="#ffd2dde1" />
+</RelativeLayout>

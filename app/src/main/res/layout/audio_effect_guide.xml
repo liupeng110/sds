@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff141617"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <ImageView
+        android:layout_width="320.0dip"
+        android:layout_height="320.0dip"
+        android:src="@drawable/img_background_imageview_effect_guide" />
+
+    <Button
+        android:id="@+id/id_button_known"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/xml_background_button_blue"
+        android:text="@string/effect_know"
+        android:textColor="#ffffffff" />
+</LinearLayout>

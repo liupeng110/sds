@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandawidgets xmlns:android="http://schemas.android.com/apk/res/android">
+    <pandawidget
+        layout="appwidget_layout_91_4x1"
+        packageName="com.sds.android.ttpod"
+        previewName="img_appwidget91_preview_4x1"
+        spanX="4"
+        spanY="1"
+        title="ttpod" />
+    <pandawidget
+        layout="appwidget_layout_91_4x4"
+        packageName="com.sds.android.ttpod"
+        previewName="img_appwidget91_album_4x4"
+        spanX="4"
+        spanY="4"
+        title="ttpod" />
+    <pandawidget
+        layout="appwidget_layout_91_voice_4x4"
+        packageName="com.sds.android.ttpod"
+        previewName="img_appwidget91_voice_4x4"
+        spanX="4"
+        spanY="4"
+        title="ttpod" />
+</pandawidgets>

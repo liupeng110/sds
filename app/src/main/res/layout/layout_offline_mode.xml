@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_mode_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_background"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30.0dip">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:src="@drawable/img_imageview_offline_mode_logo" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/offline_mode_tip"
+        android:textColor="#ffcacaca"
+        android:textSize="16.0sp" />
+
+    <Button
+        android:id="@+id/button_offline_continue"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="60.0dip"
+        android:background="@drawable/xml_background_button_offline_continue"
+        android:text="@string/continue_view"
+        android:textColor="#ffffffff" />
+</LinearLayout>

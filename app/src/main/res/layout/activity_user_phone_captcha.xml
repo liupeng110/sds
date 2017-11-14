@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Register">
+
+    <com.sds.android.ttpod.common.widget.ClearEditText
+        android:id="@+id/captcha"
+        style="@style/EditText_Register"
+        android:imeOptions="actionDone" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="14.0dip"
+        android:textColor="#ffa4adb6"
+        android:textSize="@dimen/register_tip_size" />
+
+    <TextView
+        android:id="@+id/finish"
+        style="@style/TextView_Next"
+        android:layout_marginTop="43.0dip"
+        android:text="@string/finish" />
+
+    <TextView
+        android:id="@+id/send_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="3.0dip"
+        android:paddingTop="17.0dip"
+        android:textSize="14.0sp" />
+</LinearLayout>

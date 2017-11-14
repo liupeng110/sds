@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip"
+    android:paddingTop="5.0dip">
+
+    <TextView
+        android:id="@+id/tv_dialog_notification"
+        style="@style/ListView_Item_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:lines="2"
+        android:singleLine="false"
+        android:text="@string/search_notification_no_copyright"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/unicom_flow_message"
+        style="@style/ListView_Item_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="false"
+        android:text=""
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="5.0dip"
+        android:background="@color/dialog_divider_line" />
+</LinearLayout>

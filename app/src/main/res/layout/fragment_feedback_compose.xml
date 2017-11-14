@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/common_padding">
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="210.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/xml_edit_border_feedback"
+        android:gravity="top"
+        android:hint="@string/welcome_to_feedback"
+        android:padding="@dimen/common_padding"
+        android:textColorHint="@color/text_feedback_compose_hint"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/et_contactway"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@+id/et_feedback"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/xml_edit_border_feedback"
+        android:gravity="center_vertical"
+        android:hint="@string/contact_way"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/common_padding"
+        android:singleLine="true"
+        android:textColorHint="@color/text_feedback_compose_hint"
+        android:textSize="16.0sp" />
+
+    <Button
+        android:id="@+id/btn_send_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="14.0dip"
+        android:layout_marginRight="14.0dip"
+        android:background="@drawable/img_background_button_blue_normal"
+        android:text="@string/submit_feedback"
+        android:textColor="@android:color/white"
+        android:textSize="18.0sp" />
+</RelativeLayout>

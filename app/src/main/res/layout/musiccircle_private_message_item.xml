@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:background="@drawable/xml_background_action_view"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3.0dip">
+
+    <include
+        android:id="@+id/layout_avatar"
+        layout="@layout/count_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip" />
+
+    <LinearLayout
+        android:id="@+id/layout_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_avatar"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@+id/text_datetime"
+        android:layout_toRightOf="@+id/layout_avatar">
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ff5293b9"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layout_artist_name"
+        android:layout_marginRight="10.0dip"
+        android:text="06-16 11:20"
+        android:textColor="#ff9fa0a0"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_artist_name"
+        android:layout_below="@+id/layout_artist_name"
+        android:layout_toRightOf="@+id/layout_avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="这是最新的信息"
+        android:textColor="#ff525353"
+        android:textSize="14.0sp" />
+</RelativeLayout>

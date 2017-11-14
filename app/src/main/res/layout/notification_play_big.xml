@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="128.0dip">
+
+    <ImageView
+        android:id="@+id/imageview_notification_play"
+        android:layout_width="128.0dip"
+        android:layout_height="128.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageview_notification_logo"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignBottom="@+id/imageview_notification_play"
+        android:layout_alignRight="@+id/imageview_notification_play"
+        android:layout_margin="5.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_notification_logo"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/control_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageview_notification_play"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <ImageView
+            android:id="@+id/button_previous_notification_play"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/xml_background_notification_playcontrol"
+            android:padding="15.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_button_notification_play_previous" />
+
+        <FrameLayout
+            android:id="@+id/button_play_notification_play_pause"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/xml_background_notification_playcontrol"
+            android:padding="12.0dip">
+
+            <ImageView
+                android:id="@+id/button_play_notification_play"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_button_notification_play_play" />
+
+            <ImageView
+                android:id="@+id/button_pause_notification_play"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_button_notification_play_pause" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/button_next_notification_play"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/xml_background_notification_playcontrol"
+            android:padding="15.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_button_notification_play_next" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@+id/control_bar"
+        android:layout_toRightOf="@+id/imageview_notification_play"
+        android:background="#ff3a3a3a" />
+
+    <ImageView
+        android:id="@+id/button_exit_notification_play"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/xml_background_notification_playcontrol"
+        android:padding="12.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_button_notification_exit" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/horizontal_divider"
+        android:layout_toLeftOf="@+id/button_exit_notification_play"
+        android:layout_toRightOf="@+id/imageview_notification_play"
+        android:orientation="vertical"
+        android:paddingLeft="6.0dip"
+        android:paddingTop="6.0dip">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/NotificationTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/NotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/NotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

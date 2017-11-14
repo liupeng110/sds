@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/hint_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff9000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hint_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/online_search_statement"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/hint_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hint_banner" />
+
+    <include layout="@layout/fragment_error_page" />
+
+    <ProgressBar
+        android:id="@+id/web_view_load_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_alignParentTop="true"
+        android:background="#ffefefef"
+        android:focusable="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/xml_web_view_load_progress_drawable" />
+</RelativeLayout>

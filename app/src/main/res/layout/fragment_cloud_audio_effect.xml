@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff1d1f1f">
+
+    <RelativeLayout
+        android:id="@+id/layout_effect_cloud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="2.0dip"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:id="@+id/textview_effect_equalizer_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4.0dip"
+                android:layout_toLeftOf="@+id/togglebutton_effect_equalizer_cloud"
+                android:singleLine="true"
+                android:text="@string/effect_equalizer_cloud"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+
+            <ToggleButton
+                android:id="@+id/togglebutton_effect_equalizer_cloud"
+                android:layout_width="54.0dip"
+                android:layout_height="34.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xml_background_toggle_button_effect_cloud"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/new_title"
+            layout="@layout/cloud_effect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="16.0dip" />
+
+        <include
+            android:id="@+id/recommends_effect_default"
+            layout="@layout/effect_recommend_item_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="16.0dip" />
+
+        <include
+            android:id="@+id/recommends_effect_header_view"
+            layout="@layout/recommends_effect_header_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommends_effect_default"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="16.0dip" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/recomand_audio_effect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_effect_cloud" />
+
+    <include
+        android:id="@+id/audio_wifi_tip"
+        layout="@layout/layout_offline_mode_audio"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_effect_cloud"
+        android:background="#ff1d1f1f" />
+
+    <RelativeLayout
+        android:id="@+id/audio_stop"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_effect_cloud"
+        android:background="#ff1d1f1f"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/audio_stop_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="4.0dip"
+            android:src="@drawable/img_audio_stop_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio_stop_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:text="@string/audio_match_tip"
+            android:textColor="@color/effect_listview_header_textcolor"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+</RelativeLayout>

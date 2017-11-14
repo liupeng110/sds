@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <com.sds.android.ttpod.widget.UserAvatarView
+        android:id="@+id/image_avatar"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginRight="8.0dip"
+        android:contentDescription="@string/unknown"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_avatar_default"
+        app:corner_radius="20.0dip" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_avatar"
+        android:layout_toRightOf="@+id/image_avatar"
+        android:text=""
+        android:textColor="@color/post_text_title"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/Post_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:textColor="#ff9fa0a0"
+        android:textSize="12.0sp" />
+
+    <com.sds.android.ttpod.widget.TextViewFixTouchConsume
+        android:id="@+id/tv_tweet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginRight="46.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_toRightOf="@+id/image_avatar"
+        android:singleLine="false"
+        android:textColor="#ff535355"
+        android:textSize="14.0sp" />
+</RelativeLayout>

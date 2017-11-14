@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sds.android.ttpod"
+    android:id="@+id/find_song_mv_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="181.0dip"
+    android:layout_marginBottom="5.0dip"
+    android:background="@drawable/xml_background_default">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/find_song_mv_item_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_music_default_icon"
+        app:corner_radius="5.0dip" />
+
+    <ImageView
+        android:layout_width="32.0dip"
+        android:layout_height="36.0dip"
+        android:layout_margin="8.0dip"
+        android:src="@drawable/find_song_mv_date_bk" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_month"
+        android:layout_width="32.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="center"
+        android:text="Mar"
+        android:textColor="@color/white"
+        android:textSize="8.0sp" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_day"
+        android:layout_width="32.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="18.0dip"
+        android:gravity="center"
+        android:text="12"
+        android:textColor="@color/white"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_tag1"
+        style="@style/find_song_fragment_mv_tag"
+        android:layout_marginLeft="8.0dip"
+        android:background="@drawable/img_find_song_mv_tag1" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_tag2"
+        style="@style/find_song_fragment_mv_tag"
+        android:layout_toRightOf="@+id/find_song_mv_item_tag1"
+        android:background="@drawable/img_find_song_mv_tag2" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_tag3"
+        style="@style/find_song_fragment_mv_tag"
+        android:layout_toRightOf="@+id/find_song_mv_item_tag2"
+        android:background="@drawable/img_find_song_mv_tag3" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="24.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/find_song_mv_margin_bottom"
+        android:layout_marginRight="15.0dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="10000"
+        android:textColor="@color/white"
+        android:textSize="12.0sp" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/find_song_mv_item_count_pic"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/find_song_mv_margin_bottom"
+        android:layout_toLeftOf="@+id/find_song_mv_item_count"
+        android:singleLine="true"
+        app:text="@string/icon_danmaku_count"
+        app:textSize="22.0sp" />
+
+    <TextView
+        android:id="@+id/find_song_mv_item_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/find_song_mv_item_count_pic"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginRight="15.0dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3.0dip"
+        android:background="@drawable/xml_musiccircle_post_detail_header_play" />
+</RelativeLayout>

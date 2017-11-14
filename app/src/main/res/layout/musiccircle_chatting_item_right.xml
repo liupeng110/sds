@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10.0dip">
+
+    <com.sds.android.ttpod.widget.UserAvatarView
+        android:id="@+id/image_userhead"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_avatar_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@+id/image_userhead">
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35.0dip">
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_musiccircle_chatting_right_bg"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="8.0dip"
+                android:textColor="#ff5e6366"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layout_content"
+            android:layout_marginRight="4.0dip"
+            android:minHeight="48.0dip">
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="#ffc3c3c3"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

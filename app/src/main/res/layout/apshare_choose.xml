@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff5fdfd"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/apshare_choose_listview"
+        style="@style/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/tv_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25.0dip"
+        android:background="@drawable/xml_background_apshare_blue"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:singleLine="true"
+        android:text="@string/share_start"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+</LinearLayout>

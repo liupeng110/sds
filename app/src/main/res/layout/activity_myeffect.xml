@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_effect_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff222222"
+        android:paddingBottom="12.0dip"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip"
+        android:paddingTop="6.0dip">
+
+        <include
+            android:id="@+id/layout_effect_user_info"
+            layout="@layout/effect_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5.0dip" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_effect_level"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_effect_user_info"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="10.0dip"
+            android:max="100"
+            android:maxHeight="10.0dip"
+            android:minHeight="10.0dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/xml_progressbar_effect_level" />
+
+        <RelativeLayout
+            android:id="@+id/score_layer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressbar_effect_level">
+
+            <RelativeLayout
+                android:id="@+id/textview_upgrade_left_score_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_upgrade_left_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离升级...积分"
+                    android:textColor="#ff959595" />
+
+                <TextView
+                    android:id="@+id/textview_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textview_upgrade_left_score"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8.0dip"
+                    android:text="...积分"
+                    android:textColor="#ff959595" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/wifi_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/string_myeffect_wifi_tip"
+                android:textColor="#ff959595"
+                android:textSize="12.0dip"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1f1f1f"
+        android:paddingTop="12.0dip">
+
+        <TextView
+            android:id="@+id/myeffect_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/my_effect_list_tips"
+            android:textColor="#ff666666"
+            android:textSize="15.0dip" />
+
+        <FrameLayout
+            android:id="@+id/fragment_myeffect"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/myeffect_title"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" />
+
+        <TextView
+            android:id="@+id/myeffect_title_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/my_effect_list_tips_null"
+            android:textColor="#ff828282"
+            android:textSize="14.0sp" />
+
+        <com.sds.android.ttpod.widget.StateView
+            android:id="@+id/loading_my_effect"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:loading_view="@layout/loadingview_loading_effect" />
+    </RelativeLayout>
+</LinearLayout>

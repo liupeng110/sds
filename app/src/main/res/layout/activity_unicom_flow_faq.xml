@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/unicom_flow_background_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/unicom_flow_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注意事项:"
+        android:textColor="#ff828282"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/textview_flow_faq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:lineSpacingExtra="6.0dip"
+        android:text="@string/unicom_matters_attention"
+        android:textColor="@color/unicom_flow_title_color"
+        android:textSize="13.0dip" />
+
+    <TextView
+        android:id="@+id/textview_server_detail"
+        android:layout_width="150.0dip"
+        android:layout_height="30.0dip"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:paddingTop="10.0dip"
+        android:text="常见问题 >>"
+        android:textColor="#ff6dcbed"
+        android:textSize="14.0dip" />
+</LinearLayout>

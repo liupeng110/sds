@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_classify_list_item_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffedf8fa"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8.0dip">
+
+        <ImageView
+            android:layout_width="5.0dip"
+            android:layout_height="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_classify_point" />
+
+        <TextView
+            android:id="@+id/classify_list_head_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="风格"
+            android:textColor="#ff929da1"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_classify_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip">
+
+        <ImageView
+            android:id="@+id/classify_list_item_img"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_channel_default_mini" />
+
+        <TextView
+            android:id="@+id/classify_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/classify_list_item_img"
+            android:text="金属"
+            android:textColor="#ff2e2e2e"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:layout_width="10.0dip"
+            android:layout_height="15.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrow_right" />
+    </RelativeLayout>
+</LinearLayout>

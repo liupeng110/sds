@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_post_item_container"
+    android:layout_width="0.0dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_weight="1.0"
+    android:orientation="vertical">
+
+    <com.sds.android.ttpod.widget.RatioRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.sds.android.ttpod.widget.RoundedImageView
+            android:id="@+id/id_post_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_music_default_icon"
+            app:corner_radius="4.0dip" />
+
+        <View
+            android:id="@+id/id_click_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/id_post_image"
+            android:layout_alignLeft="@+id/id_post_image"
+            android:layout_alignRight="@+id/id_post_image"
+            android:layout_alignTop="@+id/id_post_image"
+            android:background="@drawable/grid_view_item_click_bg" />
+
+        <RelativeLayout
+            android:id="@+id/id_listen_count_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="16.0dip"
+            android:layout_alignRight="@+id/id_post_image"
+            android:layout_alignTop="@+id/id_post_image"
+            android:background="@drawable/background_song_list_listen_count"
+            android:gravity="center|right"
+            android:paddingLeft="12.0dip">
+
+            <ImageView
+                android:id="@+id/id_listen_count_icon"
+                android:layout_width="10.0dip"
+                android:layout_height="10.0dip"
+                android:layout_alignTop="@+id/id_grid_view_item_listen_count"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/icon_song_list_listen_count" />
+
+            <TextView
+                android:id="@+id/id_post_listen_count"
+                android:layout_width="wrap_content"
+                android:layout_height="16.0dip"
+                android:layout_toRightOf="@+id/id_listen_count_icon"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:paddingRight="5.0dip"
+                android:singleLine="true"
+                android:text="10000"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_author_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="16.0dip"
+            android:layout_alignBottom="@+id/id_post_image"
+            android:layout_alignLeft="@+id/id_post_image"
+            android:layout_alignRight="@+id/id_post_image"
+            android:background="@drawable/background_song_list_author"
+            android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/id_author_icon"
+                android:layout_width="11.0dip"
+                android:layout_height="11.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/icon_song_list_author" />
+
+            <TextView
+                android:id="@+id/id_post_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="16.0dip"
+                android:layout_toRightOf="@+id/id_author_icon"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+    </com.sds.android.ttpod.widget.RatioRelativeLayout>
+
+    <TextView
+        android:id="@+id/id_post_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2.0dip"
+        android:maxLines="2"
+        android:text="heeeee"
+        android:textColor="#ffffffff"
+        android:textSize="13.0dip" />
+</LinearLayout>

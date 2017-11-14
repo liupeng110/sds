@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/view_play_state"
+        android:layout_width="4.0dip"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentLeft="true"
+        android:background="#ff43bdf0"
+        android:visibility="invisible" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/tv_hottest_indicator"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_toRightOf="@+id/view_play_state"
+        android:visibility="gone"
+        app:bkgText="@string/icon_hot_song_background"
+        app:bkgTextColor="@color/list_item_first"
+        app:text="@string/icon_hot_song_words"
+        app:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="36.0dip"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_toRightOf="@+id/view_play_state"
+        android:gravity="center"
+        android:text="12"
+        android:textSize="16.0sp" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/drag_handle"
+        android:layout_width="24.0dip"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:text="@string/icon_drag_sort"
+        app:textSize="32.0sp" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/menu_view"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/drag_handle"
+        android:contentDescription="song_list_item_menu_btn"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="40.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="20.0dip"
+        android:scaleType="centerInside" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/check_view"
+        android:layout_width="48.0dip"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="16.0dip"
+        android:visibility="gone" />
+
+    <com.sds.android.ttpod.widget.WrapFixedLinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="48.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_toRightOf="@+id/tv_number"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_view"
+            style="@style/ListView_Item_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fadingEdgeLength="0.0dip"
+            android:text="title"
+            android:textColor="#ffffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:orientation="horizontal">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/third_party_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:visibility="gone"
+                app:text="@string/icon_third_party_media_item"
+                app:textColor="#ff737383"
+                app:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@+id/flag_online_view"
+                android:layout_width="20.0dip"
+                android:layout_height="14.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginTop="2.0dip"
+                android:contentDescription="@android:string/unknownName"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_flag_online"
+                android:visibility="visible" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/flag_quality_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="-5.0dip"
+                android:contentDescription="@android:string/unknownName"
+                android:visibility="visible"
+                app:text="@string/icon_text_gaozhi"
+                app:textColor="#ffffffff"
+                app:textSize="30.0sp" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/flag_mv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="-5.0dip"
+                android:contentDescription="@android:string/unknownName"
+                android:visibility="visible"
+                app:text="@string/icon_text_mv_play_tag"
+                app:textColor="@color/mv_play_color_effect"
+                app:textSize="30.0sp" />
+        </LinearLayout>
+    </com.sds.android.ttpod.widget.WrapFixedLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subtitle_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="48.0dip"
+        android:layout_toRightOf="@+id/tv_number"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/downloadstate_view"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginRight="2.0dip"
+            android:contentDescription="@string/ttpod"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_media_item_singer"
+            style="@style/ListView_Item_Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:ellipsize="end"
+            android:fadingEdgeLength="0.0dip" />
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/iv_media_item_fav"
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:visibility="invisible"
+            app:text="@string/icon_favorite" />
+
+        <TextView
+            android:id="@+id/tv_media_item_fav_count"
+            style="@style/ListView_Item_Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1.0dip"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_ktv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:layout_toLeftOf="@+id/drag_handle"
+        android:background="@drawable/media_list_item_button"
+        android:focusable="false"
+        android:minWidth="50.0dip"
+        android:padding="5.0dip"
+        android:text="点歌"
+        android:textColor="#ffffffff"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+</RelativeLayout>

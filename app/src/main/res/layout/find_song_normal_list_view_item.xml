@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="75.0dip"
+    android:background="@drawable/background_title_bar"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip">
+
+    <View
+        android:id="@+id/id_click_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/iv_singer"
+        android:layout_width="65.0dip"
+        android:layout_height="65.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_artist_default"
+        app:corner_radius="4.0dip" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/itv_arrow"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="10.0dip"
+        app:text="@string/icon_arrow_right" />
+
+    <TextView
+        android:id="@+id/id_list_view_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_singer"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_toLeftOf="@+id/itv_arrow"
+        android:layout_toRightOf="@+id/iv_singer"
+        android:singleLine="true"
+        android:textColor="#ff444a50"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/id_list_view_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_list_view_item_name"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@+id/itv_arrow"
+        android:layout_toRightOf="@+id/iv_singer"
+        android:singleLine="true"
+        android:textColor="#ffa1a4a7"
+        android:textSize="12.0dip" />
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/icon_quick_play"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/xml_background_default"
+        android:visibility="gone"
+        app:text="@string/icon_quick_play" />
+</RelativeLayout>

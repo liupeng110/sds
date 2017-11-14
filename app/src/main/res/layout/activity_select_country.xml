@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    style="@style/LinearLayout_Register"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:divider="@android:drawable/screen_background_dark_transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <com.sds.android.ttpod.widget.AZSideBar
+        android:id="@+id/azsidebar"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginRight="7.0dip"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        app:normalBkgColor="#fff6f6f6"
+        app:normalTextColor="#ffc0c5cb"
+        app:pressedBkgColor="#663a5969"
+        app:pressedTextColor="#ffffffff" />
+</LinearLayout>

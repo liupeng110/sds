@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="53.0dip"
+    android:minHeight="53.0dip"
+    android:paddingLeft="8.0dip">
+
+    <FrameLayout
+        android:id="@+id/layout_search_history_clear"
+        style="@style/ImageView_Search_History_Item"
+        android:layout_alignParentRight="true">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/search_history_clear_ic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="0.0dip"
+            app:text="@string/icon_delete_x" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/search_history_title"
+        style="@style/TextView_Search_History_Item"
+        android:layout_width="fill_parent"
+        android:layout_toLeftOf="@+id/layout_search_history_clear" />
+</RelativeLayout>

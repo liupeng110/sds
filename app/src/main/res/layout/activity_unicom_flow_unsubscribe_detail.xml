@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/unicom_flow_background_color"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/icon_unicom_flow_open" />
+
+        <TextView
+            android:id="@+id/textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:text="已退订，您还可以享受该服务至月底"
+            android:textColor="#ff45c018"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffe7e7e7" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@color/unicom_flow_line"
+        android:padding="0.0dip">
+
+        <TableRow
+            android:layout_height="20.0dip"
+            android:padding="1.0dip">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="1.0dip"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:text="开启时间"
+                android:textColor="@color/unicom_flow_title_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/text_begin_time"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_weight="1.0"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="2014-10-14"
+                android:textColor="@color/unicom_flow_title_color"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="1.0dip"
+            android:paddingLeft="1.0dip"
+            android:paddingRight="1.0dip">
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="1.0dip"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:text="结束时间"
+                android:textColor="@color/unicom_flow_title_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/text_end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/textview_flow"
+                android:layout_weight="1.0"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="2014-10-14"
+                android:textColor="@color/unicom_flow_title_color"
+                android:textSize="14.0sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="当月重复开通，只计费一次"
+        android:textColor="@color/unicom_flow_title_color" />
+
+    <Button
+        android:id="@+id/button_open"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/unicom_open_button"
+        android:text="重新开通"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@color/unicom_flow_line" />
+
+    <TextView
+        android:id="@+id/textview_attention"
+        android:layout_width="150.0dip"
+        android:layout_height="30.0dip"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="6.0dip"
+        android:text="注意事项 >>"
+        android:textColor="#ff5d5d5d"
+        android:textSize="16.0dip" />
+</LinearLayout>

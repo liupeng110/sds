@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Register">
+
+    <TextView
+        android:id="@+id/regionCode"
+        style="@style/EditText_Register"
+        android:drawableRight="@drawable/img_album_right_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/mainland_region_code" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <com.sds.android.ttpod.common.widget.ClearEditText
+        android:id="@+id/edittext_phone"
+        style="@style/EditText_Register"
+        android:hint="@string/phone_number"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <com.sds.android.ttpod.common.widget.ClearEditText
+        android:id="@+id/edittext_password"
+        style="@style/EditText_Register"
+        android:hint="@string/password_hint_text"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <TextView
+        android:id="@+id/textview_login"
+        style="@style/TextView_Next"
+        android:layout_marginTop="30.0dip"
+        android:text="@string/login_text" />
+</LinearLayout>

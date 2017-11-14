@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_video_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/itv_lock_mv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14.0dip"
+        app:text="@string/icon_unlock_mv"
+        app:textColor="#ffffffff"
+        app:textSize="54.0sp" />
+
+    <FrameLayout
+        android:id="@+id/video_controller_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0.0dip"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mv_tool_bar_height"
+            android:background="@color/mv_tool_bar_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@+id/mv_top_controller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/mv_tool_bar_height"
+                    android:layout_marginRight="12.0dip">
+
+                    <ImageView
+                        android:id="@+id/back_from_mv"
+                        android:layout_width="@dimen/mv_tool_bar_height"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_back" />
+
+                    <TextView
+                        android:id="@+id/mv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="Song MV"
+                        android:textColor="#ffffffff"
+                        android:textSize="19.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mv_switch_quality"
+                android:layout_width="@dimen/mv_quality_width"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mv_quality_font_size"
+                android:visibility="invisible" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_download"
+                android:layout_width="54.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                app:text="@string/icon_post_header_download"
+                app:textColor="#ffffffff"
+                app:textSize="28.0sp" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_share"
+                android:layout_width="54.0dip"
+                android:layout_height="fill_parent"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                app:text="@string/icon_share_action_bar"
+                app:textColor="#ffffffff"
+                app:textSize="28.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mv_bottom_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mv_tool_bar_height"
+            android:layout_gravity="bottom"
+            android:background="@color/mv_tool_bar_color"
+            android:gravity="center_horizontal"
+            android:padding="0.0dip">
+
+            <ImageButton
+                android:id="@+id/mv_play_pause_button"
+                android:layout_width="@dimen/mv_play_button_dimen"
+                android:layout_height="@dimen/mv_play_button_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mv_play_button_margin"
+                android:background="@color/transparent"
+                android:paddingBottom="@dimen/mv_play_button_padding_top_bottom"
+                android:paddingLeft="@dimen/mv_play_button_padding_left"
+                android:paddingTop="@dimen/mv_play_button_padding_top_bottom"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_stop_mv" />
+
+            <TextView
+                android:id="@+id/mv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mv_duration_text_margin"
+                android:layout_toRightOf="@+id/mv_play_pause_button"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="00:00"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/mv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mv_duration_text_margin"
+                android:layout_toLeftOf="@+id/layout_send_danmaku"
+                android:text="00:00"
+                android:textSize="14.0sp" />
+
+            <SeekBar
+                android:id="@+id/mv_progress_seek_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10.0dip"
+                android:layout_toLeftOf="@+id/mv_duration"
+                android:layout_toRightOf="@+id/mv_position"
+                android:max="100"
+                android:maxHeight="@dimen/mv_play_seek_bar_height"
+                android:minHeight="@dimen/mv_play_seek_bar_height"
+                android:progressDrawable="@drawable/progressbar"
+                android:thumb="@drawable/mv_thumb"
+                android:thumbOffset="0.0dip" />
+
+            <LinearLayout
+                android:id="@+id/layout_send_danmaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toLeftOf="@+id/layout_switch_danmaku"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.sds.android.ttpod.common.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:text="@string/icon_danmaku_send"
+                    app:textColor="#ffffffff"
+                    app:textSize="32.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/danmaku_send"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_switch_danmaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.sds.android.ttpod.common.widget.IconTextView
+                    android:id="@+id/itv_switch_danmaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:text="@string/icon_danmaku_send"
+                    app:textColor="#ffffffff"
+                    app:textSize="32.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_switch_danmaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/danmaku_display"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/id_position_fast_play_bg"
+        layout="@layout/operation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/operation_volume_brightness"
+        layout="@layout/brightness_volumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_replay_mv"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_play_mv"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_replay_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_replay_mv"
+        android:layout_centerInParent="true"
+        android:text="@string/click_to_replay"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/mv_loading_failed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <include
+        layout="@layout/mv_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tx_resource_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/mv_not_found"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+</RelativeLayout>

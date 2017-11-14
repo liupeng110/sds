@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_album"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/playcontrol_bar_height">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sds.android.ttpod.framework.modules.skin.view.ModifyFitCenterImageView
+            android:id="@+id/tv_post_introduction_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_musiccircle_post_pic_default" />
+
+        <include
+            android:id="@+id/layout_mesasge"
+            layout="@layout/layout_album_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="20.0dip" />
+
+        <include
+            android:id="@+id/layout_tags"
+            layout="@layout/layout_introduciton_tags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="20.0dip" />
+
+        <include
+            android:id="@+id/layout_introduction"
+            layout="@layout/layout_introduction_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+</ScrollView>

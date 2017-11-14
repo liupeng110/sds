@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip"
+    android:layout_margin="6.0dip"
+    android:background="@drawable/xml_background_media_group_list_item">
+
+    <Button
+        android:id="@+id/follow_button"
+        style="@style/Follow_Button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4.0dip"
+        android:focusable="false"
+        android:text="@string/add_follow" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/musiccircle_user_info_item"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:layout_toLeftOf="@+id/follow_button" />
+</RelativeLayout>

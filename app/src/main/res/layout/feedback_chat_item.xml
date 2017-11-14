@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffd8dcdc"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:textColor="#ffffffff"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/tv_staff_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="13.0sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/chatting_left"
+        layout="@layout/feedback_message_box_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_chat_date" />
+
+    <include
+        android:id="@+id/chatting_right"
+        layout="@layout/feedback_message_box_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_chat_date" />
+</RelativeLayout>

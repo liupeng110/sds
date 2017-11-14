@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_post_introduction_indicator1"
+        android:layout_width="3.0dip"
+        android:layout_height="20.0dip" />
+
+    <TextView
+        android:id="@+id/tv_title_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_toRightOf="@+id/v_post_introduction_indicator1"
+        android:text="@string/post_introduction_tag"
+        android:textColor="#ff444a50"
+        android:textSize="16.0dip" />
+
+    <com.sds.android.ttpod.widget.HotwordView
+        android:id="@+id/hotword_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_post_introduction_indicator1"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="8.0dip" />
+
+    <TextView
+        android:id="@+id/tv_no_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_post_introduction_indicator1"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="8.0dip"
+        android:visibility="gone" />
+</RelativeLayout>

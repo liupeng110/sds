@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sds.android.ttpod"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/playcontrol_bar_height">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/hsv_view"
+            android:layout_width="@dimen/nav_bar_size"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/hsv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <com.ttfm.android.sdk.view.NoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" />
+    </LinearLayout>
+
+    <com.sds.android.ttpod.widget.StateView
+        android:id="@+id/ttfm_stateview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:failed_view="@layout/loadingview_failed"
+        app:nodata_view="@layout/loadingview_nodata" />
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="250.0dip">
+
+    <ImageView
+        android:id="@+id/image_profile_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@android:string/unknownName"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_background_imageview_userinfo_cover" />
+
+    <include
+        android:id="@+id/user_profile_bottom"
+        layout="@layout/musiccircle_user_header_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.sds.android.ttpod.widget.UserAvatarView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/avatar_width"
+        android:layout_height="@dimen/avatar_height"
+        android:layout_above="@+id/user_profile_bottom"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:contentDescription="@android:string/unknownName"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_avatar_default"
+        app:corner_radius="28.0dip" />
+
+    <TextView
+        android:id="@+id/text_profile_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip"
+        android:layout_above="@+id/user_profile_bottom"
+        android:layout_marginBottom="37.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/image_avatar"
+        android:background="@drawable/xml_background_my_list_header_nickname"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:text="@string/login_register"
+        android:textColor="@android:color/white"
+        android:textSize="14.0sp"
+        android:visibility="invisible" />
+
+    <com.sds.android.ttpod.widget.NetworkLoadView
+        android:id="@+id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</RelativeLayout>

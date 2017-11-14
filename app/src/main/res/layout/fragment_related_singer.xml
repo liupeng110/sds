@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/playcontrol_bar_height"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listview_related_singer"
+        style="@style/ListView"
+        android:divider="@drawable/img_market_list_divider"
+        android:dividerHeight="2.0px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <com.sds.android.ttpod.widget.StateView
+        android:id="@+id/singer_related_state_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:failed_view="@layout/loadingview_failed"
+        app:nodata_view="@layout/loadingview_nodata" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="128.0dip"
+    android:layout_above="@+id/post_detail_header_operations"
+    android:padding="10.0dip">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/post_header_picture"
+        android:layout_width="108.0dip"
+        android:layout_height="108.0dip"
+        android:layout_marginRight="10.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:Image_border_color="@color/rounded_image_corner"
+        app:Image_border_width="@dimen/rounded_image_border"
+        app:corner_radius="8.0dip" />
+
+    <ImageView
+        android:id="@+id/post_header_play"
+        android:layout_width="56.0dip"
+        android:layout_height="56.0dip"
+        android:layout_marginLeft="26.0dip"
+        android:layout_marginTop="26.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/xml_musiccircle_post_detail_header_play" />
+
+    <RelativeLayout
+        android:id="@+id/post_header_user_click_bounds"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_marginTop="7.0dip"
+        android:layout_toRightOf="@+id/post_header_picture"
+        android:background="@drawable/xml_background_default">
+
+        <com.sds.android.ttpod.widget.UserAvatarView
+            android:id="@+id/post_header_user_avatar"
+            android:layout_width="34.0dip"
+            android:layout_height="34.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:contentDescription="@string/ttpod"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_avatar_default"
+            app:corner_radius="17.0dip" />
+
+        <TextView
+            android:id="@+id/post_header_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="34.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/post_header_user_avatar"
+            android:drawablePadding="5.0dip"
+            android:drawableRight="@drawable/img_musiccircle_post_detail_header_verifyed"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/ttpod"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/post_header_info_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/post_header_user_click_bounds"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="7.0dip"
+        android:layout_toRightOf="@+id/post_header_picture" />
+
+    <RelativeLayout
+        android:id="@+id/post_header_tweet_bounds"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/post_header_info_divider"
+        android:layout_toRightOf="@+id/post_header_picture"
+        android:background="@drawable/xml_background_default">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/post_header_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            app:text="@string/icon_arrow_right" />
+
+        <TextView
+            android:id="@+id/album_publish_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/post_header_right_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/album_publish_time"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/post_header_tweet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_publish_time"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/post_header_right_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2.0dip"
+            android:maxLines="2"
+            android:text="@string/post_detail_header_tweet_default"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_item_channel_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/select_item_channel_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/select_channel_grid_item_height"
+        android:gravity="center" />
+</LinearLayout>

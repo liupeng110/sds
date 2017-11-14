@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="86.0dip"
+    android:background="@color/backgroundcolor_white"
+    android:orientation="horizontal"
+    android:paddingBottom="2.0dip">
+
+    <LinearLayout
+        android:id="@+id/layout_persionpage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2.0dip"
+        android:layout_toLeftOf="@+id/btn_set_default">
+
+        <ImageView
+            android:id="@+id/img_persionlistdefault"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="18.0dip"
+            android:src="@drawable/cmmusic_default_false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_persionlistsongname"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingTop="8.0dip"
+                android:textColor="#ff334046"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip">
+
+                <TextView
+                    android:id="@+id/text_persionlistsonger"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="1.0dip"
+                    android:maxLines="1"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingTop="2.0dip"
+                    android:textColor="#ff909da2"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/text_timeout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="1.0dip"
+                    android:maxLines="1"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingTop="2.0dip"
+                    android:textColor="#ff909da2"
+                    android:textSize="10.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_set_default"
+        android:layout_width="70.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18.0dip"
+        android:background="@drawable/cmmusic_btn_setdefault"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</RelativeLayout>

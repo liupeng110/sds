@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/top_status_bar_img"
+        android:layout_width="30.0dip"
+        android:layout_height="25.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:src="@drawable/btn_back" />
+
+    <TextView
+        android:id="@+id/top_status_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/top_status_bar_img"
+        android:gravity="center"
+        android:text="天天动听"
+        android:textColor="#ff2c3b40"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffbecfd6" />
+</RelativeLayout>

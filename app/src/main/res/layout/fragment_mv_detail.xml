@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/playcontrol_bar_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mv_opt_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mv_menu_bar_height"
+        android:background="#ffeff4f7"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:weightSum="4.0">
+
+        <LinearLayout
+            android:id="@+id/mv_menu_praise"
+            style="@style/MV_Menu_Layout">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_mv_praise"
+                style="@style/MV_Menu_Icon"
+                app:text="@string/icon_finger_up" />
+
+            <TextView
+                android:id="@+id/tv_praise_count"
+                style="@style/MV_Menu_Text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mv_menu_step"
+            style="@style/MV_Menu_Layout">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_mv_step"
+                style="@style/MV_Menu_Icon"
+                app:text="@string/icon_finger_down" />
+
+            <TextView
+                android:id="@+id/tv_step_count"
+                style="@style/MV_Menu_Text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mv_menu_download"
+            style="@style/MV_Menu_Layout">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_mv_download"
+                style="@style/MV_Menu_Icon"
+                app:text="@string/icon_media_menu_download" />
+
+            <TextView
+                android:id="@+id/tv_download"
+                style="@style/MV_Menu_Text"
+                android:text="@string/media_item_menu_download" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mv_menu_share"
+            style="@style/MV_Menu_Layout">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_mv_share"
+                style="@style/MV_Menu_Icon"
+                app:text="@string/icon_media_menu_share" />
+
+            <TextView
+                android:id="@+id/tv_share"
+                style="@style/MV_Menu_Text"
+                android:text="@string/share" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        style="@style/ListView"
+        android:layout_below="@+id/mv_opt_container"
+        android:divider="@drawable/img_market_list_divider"
+        android:dividerHeight="2.0px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <com.sds.android.ttpod.widget.StateView
+        android:id="@+id/state_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mv_opt_container"
+        app:failed_view="@layout/loadingview_failed"
+        app:nodata_view="@layout/loadingview_nodata" />
+</RelativeLayout>

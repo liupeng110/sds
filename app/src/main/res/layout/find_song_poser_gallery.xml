@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.sds.android.ttpod.widget.ScrollableViewGroup
+        android:id="@+id/layout_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent" />
+
+    <com.sds.android.ttpod.widget.IconPageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10.0dip" />
+
+    <com.sds.android.ttpod.widget.NetworkLoadView
+        android:id="@+id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip" />
+</RelativeLayout>

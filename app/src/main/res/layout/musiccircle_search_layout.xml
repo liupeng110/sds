@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/musiccircle_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_background"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/playcontrol_bar_height"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip"
+    android:paddingTop="35.0dip">
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_musiccircle_search_box"
+        android:orientation="horizontal"
+        android:padding="0.0dip">
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:hint="@string/musiccircle_input_hint"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/xml_musiccircle_search"
+            android:padding="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

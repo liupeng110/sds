@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/v_post_introduction_indicator3"
+        android:layout_width="3.0dip"
+        android:layout_height="20.0dip" />
+
+    <TextView
+        android:id="@+id/tv_album_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_toRightOf="@+id/v_post_introduction_indicator3"
+        android:text="@string/album_message_hint"
+        android:textColor="#ff444a50"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/textview_name"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_post_introduction_indicator3"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="8.0dip"
+        android:text="@string/album_name_text" />
+
+    <TextView
+        android:id="@+id/textview_alias"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_alias_text" />
+
+    <TextView
+        android:id="@+id/textview_date"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_alias"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_date_text" />
+
+    <TextView
+        android:id="@+id/textview_type"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_date"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_type_text" />
+
+    <TextView
+        android:id="@+id/textview_language"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_type"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_lang" />
+
+    <TextView
+        android:id="@+id/textview_genre"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_language"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_genre_text" />
+
+    <TextView
+        android:id="@+id/textview_company"
+        style="@style/TextView_Post_Introduction_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_genre"
+        android:layout_marginLeft="@dimen/post_introduction_margin_left_right"
+        android:layout_marginRight="@dimen/post_introduction_margin_left_right"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/album_company_text" />
+</RelativeLayout>

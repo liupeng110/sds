@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="10.0dip">
+
+    <RelativeLayout
+        android:id="@+id/id_title_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip">
+
+        <View
+            android:id="@+id/id_title_bar_left_line"
+            android:layout_width="3.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/new_disc_section_week"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@+id/id_title_bar_left_line"
+            android:gravity="center_vertical"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/new_disc_section_year"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@+id/new_disc_section_week"
+            android:gravity="center_vertical"
+            android:textColor="#ffa1a4a7"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+</RelativeLayout>

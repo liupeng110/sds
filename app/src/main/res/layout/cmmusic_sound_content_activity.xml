@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cmmusic_page_background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/cmmusic_page_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffedf8fc"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3.0px"
+                android:background="#ffd0d3d6" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:background="@color/menu_backgroundcolor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recommend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/tuijian"
+                    android:textColor="@color/menutextcolor"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/dj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/wuqu"
+                    android:textColor="@color/menutextcolor"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/funny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/gaoxiao"
+                    android:textColor="@color/menutextcolor"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/paihang"
+                    android:textColor="@color/menutextcolor"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <com.sds.android.ttpod.cmmusic.fragment.UnderlineIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="3.0dip" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0px"
+                android:background="#ffd0d3d6" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

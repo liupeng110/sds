@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_effect_equalizer_handpick_title"
+        style="@style/TextView_Effect_Equalizer_Title"
+        android:text="@string/effect_equalizer_handpick" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+        android:paddingTop="0.0dip">
+
+        <com.sds.android.ttpod.widget.SimpleGridView
+            android:id="@+id/simplegridview_effect"
+            style="@style/GridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textview_effect_equalizer_all_title"
+        style="@style/TextView_Effect_Equalizer_Title"
+        android:text="@string/effect_equalizer_all" />
+</LinearLayout>

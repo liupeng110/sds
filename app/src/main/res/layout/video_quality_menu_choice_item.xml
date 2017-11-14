@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_mv_type"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="none"
+    android:fadingEdge="horizontal"
+    android:fadingEdgeLength="5.0dip"
+    android:gravity="center"
+    android:lines="1"
+    android:padding="@dimen/mv_quality_menu_padding"
+    android:singleLine="true"
+    android:textColor="#ffffffff"
+    android:textSize="@dimen/mv_quality_font_size" />

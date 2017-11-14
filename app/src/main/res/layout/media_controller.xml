@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:layout_alignParentBottom="true"
+    android:background="#8f000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/mediacontroller_play_pause"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:background="@drawable/xml_background_dialog_button_variable"
+        android:gravity="center"
+        android:src="@drawable/img_media_controller_pause" />
+
+    <TextView
+        android:id="@+id/mediacontroller_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:layout_toRightOf="@+id/mediacontroller_play_pause"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:focusable="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:maxHeight="12.0dip"
+        android:minHeight="12.0dip"
+        android:progressDrawable="@drawable/xml_volume_seekbar"
+        android:thumb="@null" />
+
+    <ImageView
+        android:id="@+id/volume_icon"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_toLeftOf="@+id/volume_seekbar"
+        android:src="@drawable/img_volume_icon" />
+
+    <SeekBar
+        android:id="@+id/mediacontroller_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/volume_icon"
+        android:layout_toRightOf="@+id/mediacontroller_time"
+        android:focusable="true"
+        android:max="1000"
+        android:maxHeight="12.0dip"
+        android:minHeight="12.0dip"
+        android:progressDrawable="@drawable/xml_media_controller_seekbar"
+        android:thumb="@null" />
+</RelativeLayout>

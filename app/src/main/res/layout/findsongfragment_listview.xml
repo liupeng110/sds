@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.sds.android.ttpod.widget.dragupdatelist.DragUpdateListView
+        android:id="@+id/drag_update_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.sds.android.ttpod.widget.NetworkLoadView
+        android:id="@+id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</FrameLayout>

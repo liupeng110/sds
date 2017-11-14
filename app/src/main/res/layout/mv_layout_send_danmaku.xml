@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sds.android.ttpod.activities.mv.DanmakuPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_danmaku_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cc000000"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="12.0dip"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mv_tool_bar_height"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_from_mv"
+            android:layout_width="@dimen/mv_tool_bar_height"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_back" />
+
+        <com.sds.android.ttpod.common.widget.EditTextPreIme
+            android:id="@+id/edittext"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/img_musiccircle_comment_content_bkg"
+            android:hint="@string/danmaku_input_hint"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:lines="1"
+            android:maxLines="2"
+            android:padding="6.0dip"
+            android:paddingBottom="0.0dip"
+            android:paddingTop="0.0dip"
+            android:textColor="#ff545454"
+            android:textColorHint="#ffcacaca" />
+
+        <TextView
+            android:id="@+id/tv_shoot"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/xml_bkg_danmaku_normal"
+            android:gravity="center"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="4.0dip"
+            android:text="@string/danmaku_shoot"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:text="@string/icon_danmaku_text_small"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="30.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:text="@string/icon_danmaku_text_large"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_position_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:text="@string/icon_danmaku_position_top"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_position_to_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:text="@string/icon_danmaku_position_to_left"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_position_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="30.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:text="@string/icon_danmaku_position_bottom"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_color6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:padding="@dimen/danmaku_shoot_button_padding"
+                app:bkgText="@string/icon_danmaku_color_frame"
+                app:text="@string/icon_danmaku_color_circle"
+                app:textSize="@dimen/danmaku_shoot_button_size" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</com.sds.android.ttpod.activities.mv.DanmakuPanel>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discovery_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_related_post"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:layout_marginTop="4.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip">
+
+        <View
+            android:id="@+id/v_indicator_related_post"
+            android:layout_width="3.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginBottom="7.0dip"
+            android:layout_marginTop="7.0dip" />
+
+        <TextView
+            android:id="@+id/tv_title_related_song"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/posts_contain_this_song"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/posts_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title_recommend_song"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip">
+
+        <View
+            android:id="@+id/v_indicator_recommend_song"
+            android:layout_width="3.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginBottom="7.0dip"
+            android:layout_marginTop="7.0dip" />
+
+        <TextView
+            android:id="@+id/tv_title_recommend_song"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/related_songs"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+</LinearLayout>

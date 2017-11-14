@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_landscape_menu_top_bg"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/icon_small_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48.0dip"
+        android:src="@drawable/img_small_volume_landscape" />
+
+    <com.sds.android.ttpod.framework.modules.skin.view.SeekBarExpansion
+        android:id="@+id/seekbar_volume_landscape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/icon_big_volume"
+        android:layout_toRightOf="@+id/icon_small_volume"
+        android:paddingLeft="30.0dip"
+        android:paddingRight="30.0dip"
+        android:progressDrawable="@drawable/xml_seekbar_volume_landscape"
+        android:thumb="@drawable/xml_seekbar_thumb_volume_landscape"
+        android:thumbOffset="27.0dip" />
+
+    <ImageView
+        android:id="@+id/icon_big_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20.0dip"
+        android:layout_toLeftOf="@+id/divider"
+        android:src="@drawable/img_big_volume_landscape" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@+id/icon_locker"
+        android:background="@drawable/img_landscape_boundary_line" />
+
+    <com.sds.android.ttpod.component.landscape.LandscapeLockerIcon
+        android:id="@+id/icon_locker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="40.0dip" />
+</RelativeLayout>

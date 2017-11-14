@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/id_grid_view_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:Image_border_color="@color/rounded_image_corner"
+        app:Image_border_width="@dimen/rounded_image_border"
+        app:corner_radius="4.0dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_grid_view_item_image"
+        android:layout_alignLeft="@+id/id_grid_view_item_image"
+        android:layout_alignRight="@+id/id_grid_view_item_image"
+        android:layout_alignTop="@+id/id_grid_view_item_image">
+
+        <TextView
+            android:id="@+id/id_week_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.0dip"
+            android:textColor="@color/recomm_day_of_week_color"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_day_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffffff"
+            android:textSize="50.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

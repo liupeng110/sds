@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="56.0dip"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip">
+
+    <RelativeLayout
+        android:id="@+id/header_layout_favorite"
+        style="@style/TextView_PostDetail_Header_Operation_container">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/post_head_favorite_icon_text"
+            style="@style/TextView_PostDetail_Header_Operation_Icon"
+            app:text="@string/icon_post_header_favorite_no" />
+
+        <TextView
+            android:id="@+id/post_header_favorite"
+            style="@style/TextView_PostDetail_Header_Operation_text"
+            android:text="@string/favorite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_layout_comment"
+        style="@style/TextView_PostDetail_Header_Operation_container">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/post_head_comment_icon_text"
+            style="@style/TextView_PostDetail_Header_Operation_Icon"
+            app:text="@string/icon_post_header_comments" />
+
+        <TextView
+            android:id="@+id/post_header_comment"
+            style="@style/TextView_PostDetail_Header_Operation_text"
+            android:text="@string/musiccircle_comment" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_layout_share"
+        style="@style/TextView_PostDetail_Header_Operation_container">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/post_head_share_icon_text"
+            style="@style/TextView_PostDetail_Header_Operation_Icon"
+            app:text="@string/icon_post_header_share" />
+
+        <TextView
+            android:id="@+id/post_header_share"
+            style="@style/TextView_PostDetail_Header_Operation_text"
+            android:text="@string/share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_layout_download"
+        style="@style/TextView_PostDetail_Header_Operation_container">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/post_head_download_icon_text"
+            style="@style/TextView_PostDetail_Header_Operation_Icon"
+            app:text="@string/icon_post_header_download" />
+
+        <TextView
+            android:id="@+id/post_header_download"
+            style="@style/TextView_PostDetail_Header_Operation_text"
+            android:text="@string/download_post" />
+    </RelativeLayout>
+</LinearLayout>

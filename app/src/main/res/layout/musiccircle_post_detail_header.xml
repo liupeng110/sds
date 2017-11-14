@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="184.0dip"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/post_detail_header_operations"
+        layout="@layout/musiccircle_post_detail_header_operations" />
+
+    <include
+        android:id="@+id/post_header_info_container"
+        layout="@layout/musiccircle_post_detail_header_info" />
+
+    <View
+        android:id="@+id/post_header_bottom_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@+id/post_detail_header_operations"
+        android:background="#26ffffff" />
+</RelativeLayout>

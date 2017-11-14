@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/unicom_flow_background_color"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="联通包使用状态"
+        android:textColor="#ff4f4f4f"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/text_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="12.0dip"
+        android:text="开通手机号:"
+        android:textColor="#ff666666"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_number_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112.0dip"
+        android:text="18521597390"
+        android:textColor="#ff3fc0ee"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_subscribe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_number_title"
+        android:layout_marginTop="12.0dip"
+        android:text="订购状态:"
+        android:textColor="#ff666666"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_subscribe_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112.0dip"
+        android:text="已开通"
+        android:textColor="#ff3fc0ee"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_start_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_subscribe_title"
+        android:layout_marginTop="12.0dip"
+        android:text="开启时间:"
+        android:textColor="#ff666666"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_start_time_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112.0dip"
+        android:text="111111111111"
+        android:textColor="#ff3fc0ee"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_finish_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_start_time_title"
+        android:layout_marginTop="12.0dip"
+        android:text="终止时间:"
+        android:textColor="#ff666666"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/text_finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_finish_time_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112.0dip"
+        android:text="持续使用"
+        android:textColor="#ff3fc0ee"
+        android:textSize="13.0sp" />
+
+    <Button
+        android:id="@+id/button_unsubscribe"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_below="@+id/text_finish_time_title"
+        android:layout_marginTop="32.0dip"
+        android:background="@drawable/button_subscribe"
+        android:onClick="unSubScribeOnClick"
+        android:text="退订"
+        android:textColor="#ffffffff"
+        android:textSize="22.0sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_unsubscribe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8.0dip"
+        android:text="(注:退订后,本月月底前可继续享受该服务)"
+        android:textColor="#ff9c9c9c"
+        android:textSize="12.0sp" />
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@+id/layout_unicom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/main_my_unicom_enter"
+                android:padding="8.0dip">
+
+                <ImageView
+                    android:id="@+id/imageview_unicom"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:src="@drawable/fragment_my_unicom" />
+
+                <TextView
+                    android:id="@+id/text_unicom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/imageview_unicom"
+                    android:clickable="true"
+                    android:text="包流量畅听"
+                    android:textColor="#fffb6c45"
+                    android:textSize="13.0sp" />
+
+                <ImageButton
+                    android:id="@+id/image_button_unicom_close"
+                    android:layout_width="10.0dip"
+                    android:layout_height="10.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_toRightOf="@+id/text_unicom"
+                    android:background="@drawable/main_my_unicom_close" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.sds.android.ttpod.common.widget.RatioFrameLayout
+            android:id="@+id/layout_local_music"
+            android:layout_width="fill_parent"
+            android:layout_height="84.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            app:design_width="309.0dip"
+            app:ratio_height="84"
+            app:ratio_width="309"
+            app:scale_child="true">
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_local_music"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left|top"
+                android:layout_marginBottom="22.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="253.0dip"
+                android:layout_marginTop="22.0dip"
+                android:background="@color/mask_background_color" />
+
+            <TextView
+                android:id="@+id/text_title"
+                style="@style/ListView_Item_Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left|top"
+                android:layout_marginBottom="22.0dip"
+                android:layout_marginLeft="70.0dip"
+                android:layout_marginRight="72.0dip"
+                android:layout_marginTop="22.0dip"
+                android:background="@color/mask_background_color"
+                android:gravity="center_vertical"
+                android:text="@string/local_music"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left|top"
+                android:layout_marginBottom="22.0dip"
+                android:layout_marginLeft="70.0dip"
+                android:layout_marginRight="72.0dip"
+                android:layout_marginTop="48.0dip"
+                android:background="@color/mask_background_color"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/count_of_media"
+                android:textColor="#ff000000"
+                android:textSize="12.0sp" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_play"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="22.0dip"
+                android:layout_marginLeft="237.0dip"
+                android:layout_marginRight="32.0dip"
+                android:layout_marginTop="22.0dip"
+                android:background="@color/mask_background_color"
+                android:contentDescription="my_fragment_random_play" />
+
+            <com.sds.android.ttpod.common.widget.IconTextView
+                android:id="@+id/itv_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="277.0dip"
+                android:layout_marginRight="0.0dip"
+                android:layout_marginTop="52.0dip"
+                android:background="@color/mask_background_color"
+                android:contentDescription="my_fragment_menu"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip" />
+        </com.sds.android.ttpod.common.widget.RatioFrameLayout>
+
+        <com.sds.android.ttpod.widget.SimpleGridView
+            android:id="@+id/sgv_entry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.0dip" />
+    </LinearLayout>
+</ScrollView>

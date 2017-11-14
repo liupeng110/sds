@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#4d010312"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="8.0dip">
+
+    <LinearLayout
+        android:id="@+id/layout_add_media"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/ktv_add_button"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/button_add_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ktv_song_icon"
+            android:gravity="center"
+            android:text="选择歌曲"
+            android:textColor="#fffefffc"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_connect_ktv"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/ktv_connect_button"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/button_connect_ktv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ktv_scan_icon"
+            android:gravity="center"
+            android:text="连接KTV"
+            android:textColor="#fffefffc"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_play_all_song"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/ktv_connect_button"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/button_play_all_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="一键全部点歌"
+            android:textColor="#fffefffc"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+</FrameLayout>

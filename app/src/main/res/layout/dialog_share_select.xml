@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_view_share_select"
+    style="@style/ListView"
+    android:layout_marginBottom="8.0dip"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginRight="8.0dip"
+    android:layout_marginTop="8.0dip"
+    android:listSelector="@drawable/xml_dialog_common_selector"
+    android:numColumns="3" />

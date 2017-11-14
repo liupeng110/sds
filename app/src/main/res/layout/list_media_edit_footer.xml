@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/playcontrol_bar_height"
+    android:background="@drawable/img_background_media_edit_panel"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_remove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/xml_background_action_view"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            app:text="@string/icon_delete_trash"
+            app:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/remove"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="#ff9b9b9b" />
+
+    <LinearLayout
+        android:id="@+id/btn_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/xml_background_action_view"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            app:text="@string/icon_add_list"
+            app:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/add"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="#ff9b9b9b" />
+
+    <LinearLayout
+        android:id="@+id/btn_send"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/xml_background_action_view"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip">
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:layout_width="28.0dip"
+            android:layout_height="28.0dip"
+            app:text="@string/icon_share"
+            app:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/send"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</LinearLayout>

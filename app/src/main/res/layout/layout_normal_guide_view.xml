@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/image_view_normal_guide"
+        android:layout_width="@dimen/guide_image_width"
+        android:layout_height="@dimen/guide_image_height"
+        android:layout_centerInParent="true"
+        android:src="@drawable/guide_image01" />
+</RelativeLayout>

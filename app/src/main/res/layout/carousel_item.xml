@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carousel_item_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/rounded_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        tt:corner_radius="6.0dip" />
+
+    <TextView
+        android:id="@+id/carousel_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:focusable="false"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/carousel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/carousel_description"
+        android:layout_marginLeft="12.0dip"
+        android:focusable="false"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20.0sp"
+        android:visibility="visible" />
+
+    <com.sds.android.ttpod.widget.carousel.PlayImageView
+        android:id="@+id/quick_play"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5.0dip"
+        android:src="@drawable/xml_musiccircle_post_detail_header_play" />
+</RelativeLayout>

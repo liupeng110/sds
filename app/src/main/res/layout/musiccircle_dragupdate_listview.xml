@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sds.android.ttpod.widget.dragupdatelist.DragUpdateListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/musiccircle_dragupdate_listview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="@null"
+    android:dividerHeight="0.0px"
+    android:fadingEdge="none"
+    android:footerDividersEnabled="false"
+    android:headerDividersEnabled="false"
+    android:listSelector="@android:color/transparent"
+    android:scrollbars="vertical" />

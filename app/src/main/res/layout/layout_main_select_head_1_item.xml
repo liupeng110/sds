@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/select_head_1_item_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_channel_default_mini" />
+
+    <ImageView
+        android:id="@+id/select_head_1_item_close"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_alignParentRight="true"
+        android:padding="8.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_channel_bbs_post_delsong" />
+</RelativeLayout>

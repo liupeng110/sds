@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/singer_mv_list_item_padding">
+
+    <RelativeLayout
+        android:id="@+id/layout_mv_image"
+        android:layout_width="@dimen/singer_mv_image_width"
+        android:layout_height="@dimen/singer_mv_image_height">
+
+        <com.sds.android.ttpod.widget.RoundedImageView
+            android:id="@+id/image_mv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/effect_blue"
+            app:corner_radius="4.0dip"
+            app:oval="false" />
+
+        <TextView
+            android:id="@+id/text_mv_type"
+            style="@style/MV_TextView_Quality" />
+
+        <TextView
+            android:id="@+id/mv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:background="#a0000000"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:textColor="@android:color/white"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip">
+
+        <TextView
+            android:id="@+id/text_mv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/text_mv_singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_mv_name"
+            android:textColor="@color/mv_portrait_menu_play_count"
+            android:textSize="12.0sp" />
+
+        <include
+            layout="@layout/layout_singer_mv_list_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_mv_singer_name"
+            android:layout_marginTop="8.0dip" />
+    </RelativeLayout>
+</LinearLayout>

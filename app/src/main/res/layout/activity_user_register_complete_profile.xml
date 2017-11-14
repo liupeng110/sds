@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Register">
+
+    <com.sds.android.ttpod.widget.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/register_avatar_width"
+        android:layout_height="@dimen/register_avatar_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40.0dip"
+        android:layout_marginTop="41.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_avatar_register_default" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <com.sds.android.ttpod.common.widget.ClearEditText
+        android:id="@+id/nickName"
+        style="@style/EditText_Register"
+        android:hint="@string/nickname_hint_text"
+        android:imeOptions="actionDone" />
+
+    <View style="@style/UserInfo_division_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="14.0dip"
+        android:text="@string/nickname_length_limit"
+        android:textColor="#ffa4b9d6"
+        android:textSize="@dimen/register_tip_size" />
+
+    <TextView
+        android:id="@+id/finish"
+        style="@style/TextView_Next"
+        android:layout_marginTop="43.0dip"
+        android:text="@string/finish" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/more_modify_hint"
+        android:textColor="#ff4e596d" />
+</LinearLayout>

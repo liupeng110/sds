@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_background"
+    android:fadingEdge="none">
+
+    <LinearLayout
+        android:id="@+id/layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_avatar"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="6.0dip"
+                android:layout_height="14.0dip"
+                android:background="#ff5aa2ff" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/userinfo_setting"
+                android:textColor="#ff000000"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View style="@style/UserInfo_division_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_avatar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="37.0dip"
+                android:text="@string/change_my_avatar"
+                android:textSize="16.0sp" />
+
+            <com.sds.android.ttpod.widget.RoundedImageView
+                android:id="@+id/imageview_userinfo_avatar"
+                android:layout_width="@dimen/avatar_width"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_marginBottom="6.0dip"
+                android:layout_marginRight="13.0dip"
+                android:layout_marginTop="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_avatar_default"
+                app:Image_border_color="#b0ffffff"
+                app:Image_border_width="2.0dip" />
+        </LinearLayout>
+
+        <View style="@style/UserInfo_division_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/change_background"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <com.sds.android.ttpod.widget.RoundedImageView
+                android:id="@+id/imageview_background"
+                android:layout_width="34.0dip"
+                android:layout_height="34.0dip"
+                android:layout_marginBottom="6.0dip"
+                android:layout_marginRight="22.0dip"
+                android:layout_marginTop="6.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_background_imageview_userinfo_cover"
+                app:corner_radius="4.0dip" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/nickname"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/textview_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:text="Nicky"
+                android:textColor="#ff4c5983"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="38.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/signature"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/textview_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:text="Nothing better than something?"
+                android:textColor="#ff4c5983"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/gender"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/textview_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:text="Man"
+                android:textColor="#ff4c5983"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/birthday"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/textview_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:text="1988/09/12"
+                android:textColor="#ff4c5983"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_area"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/area"
+                android:textColor="#ffa5acb6"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/textview_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:text="ShangHai"
+                android:textColor="#ff4c5983"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_area"
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <LinearLayout
+            android:id="@+id/title_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="6.0dip"
+                android:layout_height="14.0dip"
+                android:background="#ff5aa2ff" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/userinfo_account"
+                android:textColor="#ff000000"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/password"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:src="@drawable/img_setting_right_arrow" />
+        </LinearLayout>
+
+        <View
+            style="@style/UserInfo_division_line"
+            android:layout_marginLeft="38.0dip" />
+
+        <Button
+            android:id="@+id/button_userinfo_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="47.0dip"
+            android:layout_marginLeft="38.0dip"
+            android:layout_marginRight="38.0dip"
+            android:layout_marginTop="21.0dip"
+            android:background="@drawable/xml_background_button_userinfo_logout"
+            android:text="@string/userinfo_logout"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</ScrollView>

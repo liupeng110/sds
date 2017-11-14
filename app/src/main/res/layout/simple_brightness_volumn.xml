@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_operation_info_bkg"
+    android:orientation="vertical"
+    android:padding="8.0dip">
+
+    <com.sds.android.ttpod.common.widget.IconTextView
+        android:id="@+id/operation_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:textColor="#ffffffff"
+        app:textSize="40.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center">
+
+        <ImageView
+            android:id="@+id/operation_full"
+            android:layout_width="94.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/video_num_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/operation_percent"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleType="matrix"
+            android:src="@drawable/video_num_front"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/volume_percent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</LinearLayout>

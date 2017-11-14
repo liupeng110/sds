@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#4f000000">
+
+    <LinearLayout
+        android:id="@+id/following_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/xml_musiccircle_button_bg"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2.0dip">
+
+        <TextView
+            android:id="@+id/following_value"
+            style="@style/Follow_Content"
+            android:text="5000" />
+
+        <TextView
+            android:id="@+id/following_label"
+            style="@style/Follow_Label"
+            android:text="关注" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/follower_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/following_layout"
+        android:background="@drawable/xml_musiccircle_button_bg"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2.0dip">
+
+        <TextView
+            android:id="@+id/follower_value"
+            style="@style/Follow_Content"
+            android:text="5000" />
+
+        <TextView
+            android:id="@+id/follower_label"
+            style="@style/Follow_Label"
+            android:text="粉丝" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/private_message"
+        style="@style/Follow_Button"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4.0dip"
+        android:layout_toLeftOf="@+id/toggle_follow"
+        android:background="@drawable/xml_musiccircle_follow"
+        android:drawableLeft="@drawable/img_musiccircle_private_message"
+        android:text="发私信"
+        android:textColor="#ff34393c" />
+
+    <Button
+        android:id="@+id/toggle_follow"
+        style="@style/Follow_Button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4.0dip"
+        android:background="@drawable/xml_musiccircle_follow"
+        android:focusable="true"
+        android:text="关注"
+        android:textColor="#ff34393c" />
+</RelativeLayout>

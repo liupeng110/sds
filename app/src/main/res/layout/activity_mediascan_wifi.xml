@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Activity_Background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_mediascan_wifi_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="40.0dip"
+        android:drawableTop="@drawable/img_textview_mediascan_wifi_off"
+        android:gravity="center"
+        android:text="@string/mediascan_wifi_title"
+        android:textColor="#ff717683"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/textview_mediascan_wifi_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/mediascan_wifi_tips"
+        android:textColor="#ff2daeea"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/textview_mediascan_wifi_input_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:text="@string/mediascan_wifi_input_ip"
+        android:textColor="#ff717683"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/textview_mediascan_wifi_ipaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/xml_background_button_blue"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="10.0dip"
+        android:text="http://192.168.xxxx"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+</LinearLayout>

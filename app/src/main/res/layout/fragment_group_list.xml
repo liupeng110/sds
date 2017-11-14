@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_album"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_create_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip">
+
+        <TextView
+            android:id="@+id/tv_create_playlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:background="@drawable/xml_background_button_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/create_playlist_add"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_custom_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/playcontrol_bar_height" />
+</LinearLayout>

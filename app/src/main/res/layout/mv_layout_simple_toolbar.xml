@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sds.android.ttpod.activities.mv.SimpleVideoPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_simple_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_top_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mv_simple_toolbar_height"
+        android:background="@drawable/mv_bottom_control_bg"
+        android:gravity="center_vertical"
+        android:padding="0.0dip">
+
+        <LinearLayout
+            android:id="@+id/tv_switch_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dip"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip">
+
+            <TextView
+                android:id="@+id/tv_switch_danmaku_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_bkg_danmaku_send_portrait"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="5.0dip"
+                android:text="@string/danmaku_hide"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_send_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2.0dip"
+            android:layout_toLeftOf="@+id/tv_switch_danmaku"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_bkg_danmaku_send_portrait"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="5.0dip"
+                android:text="@string/danmaku_send"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mv_bottom_controller"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/mv_bottom_control_bg"
+        android:gravity="center"
+        android:padding="0.0dip">
+
+        <ImageButton
+            android:id="@+id/mv_play_pause_button"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="8.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="8.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_stop_mv" />
+
+        <com.sds.android.ttpod.common.widget.IconTextView
+            android:id="@+id/itv_switch_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="10.0dip"
+            app:text="@string/icon_danmaku_to_landscape"
+            app:textColor="#ffffffff"
+            app:textSize="22.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/itv_switch_orientation"
+            android:layout_toRightOf="@+id/mv_play_pause_button"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/mv_progress_seek_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.0dip"
+                android:max="100"
+                android:maxHeight="2.0dip"
+                android:minHeight="2.0dip"
+                android:progressDrawable="@drawable/progressbar"
+                android:thumb="@drawable/mv_thumb_small"
+                android:thumbOffset="0.0dip" />
+
+            <TextView
+                android:id="@+id/mv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="00:00"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_play_mv"
+        android:layout_width="54.0dip"
+        android:layout_height="54.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/img_play_mv"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/mv_loading_failed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <include
+        layout="@layout/mv_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <include
+        android:id="@+id/id_position_fast_play_bg"
+        layout="@layout/simple_operation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/operation_volume_brightness"
+        layout="@layout/simple_brightness_volumn"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tx_resource_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/mv_not_found"
+        android:textColor="#ffffffff"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+</com.sds.android.ttpod.activities.mv.SimpleVideoPanel>

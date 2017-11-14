@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_downloading_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="15.0dip"
+        android:lines="2"
+        android:textColor="#ff284f7a"
+        android:textSize="16.0sp" />
+
+    <ProgressBar
+        android:id="@+id/downloading_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="14.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/ktv_download_progress" />
+</LinearLayout>

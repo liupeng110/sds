@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/unicom_flow_background_color"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="如有疑问，请咨询联通客服：10010"
+        android:textColor="#ff000000"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:lineSpacingExtra="6.0dip"
+        android:text="@string/unicom_attention_message"
+        android:textColor="#ff1e1e1e"
+        android:textSize="14.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/unicom_flow_line" />
+
+    <TextView
+        android:id="@+id/textview_attention"
+        android:layout_width="150.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5.0dip"
+        android:gravity="left"
+        android:text="常见问题 >>"
+        android:textColor="#ff000000"
+        android:textSize="14.0dip" />
+</LinearLayout>

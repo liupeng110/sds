@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/xml_background_action_view"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3.0dip">
+
+    <include
+        layout="@layout/count_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:text="Test Kai"
+        android:textColor="#ff3d3d3d"
+        android:textSize="16.0sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:contentDescription="@string/ttpod"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_setting_right_arrow" />
+</LinearLayout>
